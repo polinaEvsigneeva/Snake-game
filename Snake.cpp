@@ -220,7 +220,6 @@ void Map::setColor(int color) {// ustawia color
 	}
 	Snake::result Snake::copmuterControl() {
 		// zbiera jedzenie
-		// poruszajac sie w linii pionowej przegladamy cala kolumne i jesli waz znajduje jedzenie, to zmienia kierunek
 		if ((dir == dirDown) || (dir == dirUp)) {
 			int i;
 			for (i = 0; i < mapWidth; i++) {
@@ -233,7 +232,7 @@ void Map::setColor(int color) {// ustawia color
 				dir = (i < x) ? dirLeft : dirRight;
 				
 		}
-		// tak samo w linii poziomowej
+		
 		if ((dir == dirRight) || (dir == dirLeft)) {
 			int i;
 			for (i = 0; i < mapHeight; i++) {
